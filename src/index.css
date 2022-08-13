@@ -1,13 +1,165 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Russo+One');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 16px;
 }
+
+body {
+  min-height: 100vh;
+  
+  display: flex;
+  background-color: #b7d7e8;
+  background-image: url("./background.jpg");
+  background-size: contain;
+  justify-content: center;
+  color: #034f84;
+  
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 600px;
+  height: 100vh;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #f7cac9;
+  border-radius: 10px;
+}
+.Header {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  background-color: #034f84;
+  width: 100%;
+  border-radius: 10px;
+  color: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-family: Russo One;
+  
+  
+}
+.Footer {
+  color:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #034f84;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+
+}
+.Home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 500px;
+  width: 97%;
+  overflow: scroll;
+  scrollbar-width: none;
+  flex-grow: 1;
+  
+}
+.Home::-webkit-scrollbar {
+  display: none;
+}
+.Home>ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  list-style: none;
+  margin-top: 20px;
+}
+.contact-item {
+  font-family: DynaPuff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+  padding: 10px;
+  user-select: none;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background-color: #f7786b;
+}
+.phone {
+  padding-left: 10px;
+}
+.contact-item>.left {
+  display: flex;
+  flex-direction: column;
+}
+.contact-item:hover {
+  background-color: #92a8d1;
+  
+}
+.contact-item:active {
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.delete-up {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.button {
+  color:#034f84;
+  font-size: 1.5rem;
+  padding: 7px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  background-color: #f7786b;
+}
+.button:active {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  
+}
+.addContact {
+  cursor: pointer;
+  margin-top: 15px;
+  padding: 10px;
+  background-color:blanchedalmond;
+  color: darkgoldenrod;
+  font-size: 1rem;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  
+}
+.contact-form > label {
+  display: none;
+}
+.contact-form > input {
+  width: 400px;
+  height: 30px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  margin-top: 8px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: none;
+} 
+#adCon {
+  font-size: 1.5rem;
+  margin-left: 120px;
+  
+  
+}
+
+
